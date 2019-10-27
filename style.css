@@ -1,0 +1,79 @@
+html {
+	background-image: url("https://raw.githubusercontent.com/KiroTheBlueFox/MoBlocksWiki/master/Images/Background.png");
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	font-family: "Arial";
+	font-size: 14px;
+}
+
+.MainPart {
+	color: black;
+	background-color: white;
+	padding: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.ButtonList {
+	margin-left: 150px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.button {
+	padding: 15px;
+	margin: 10px;
+	background-color: white;
+	color: black;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.button:hover {
+	color: #444;
+}
+
+.banner {
+	margin-left: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 40%;
+	border-radius: 30px;
+	box-shadow: 0px 0px 15px black;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: heavy;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+a {
+	color: #0066ff;
+}
+
+.br { 
+	display: block; 
+	margin-bottom: 0em; 
+}
+
+a:hover {
+	color: #0033bb;
+}
