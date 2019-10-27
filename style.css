@@ -1,23 +1,48 @@
-body
-{
-  font-family: "Arial";
-  font-size: 20px;
+body {
+	font-family: "Arial";
+	font-size: 18px;
 }
 
-h1
-{
-  font-size: 40px;
-  font-style: normal;
+h1 {
+	font-size: 30px;
+	font-style: normal;
 }
 
-h2
-{
-  font-size: 30px;
-  font-style: normal;
+h2 {
+	font-size: 22px;
+	font-style: normal;
 }
 
-h3
-{
-  font-size: 24px;
-  font-style: normal;
+h3 {
+	font-size: 20px;
+	font-style: normal;
+}
+
+a {
+	color: #0066ff;
+}
+
+.br { 
+	display: block; 
+    margin-bottom: 0em; 
+}
+
+a:hover {
+	animation-name: linkHover;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes linkHover {
+	from {
+		color: #0066ff;
+	}
+	
+	50% {
+		color: #003388;
+	}
+	
+	to {
+		color: #0066ff;
+	}
 }
