@@ -38,6 +38,16 @@ img {
 	text-decoration: none;
 }
 
+.buttonunused {
+	padding: 15px;
+	margin: 10px;
+	padding-bottom: 1px;
+	background-color: gray;
+	color: black;
+	font-style: normal;
+	text-decoration: none;
+}
+
 .button:hover {
 	color: #444;
 }
