@@ -28,21 +28,5 @@ a {
 }
 
 a:hover {
-	animation-name: linkHover;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes linkHover {
-	from {
-		color: #0066ff;
-	}
-	
-	50% {
-		color: #003388;
-	}
-	
-	to {
-		color: #0066ff;
-	}
+	color: #003388;
 }
