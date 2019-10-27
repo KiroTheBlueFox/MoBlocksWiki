@@ -1,6 +1,19 @@
 body {
 	font-family: "Arial";
 	font-size: 14px;
+	color: #ffffff;
+	background-image: url("https://raw.githubusercontent.com/KiroTheBlueFox/MoBlocksWiki/master/Images/Background.png");
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+}
+
+img {
+	border-radius: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
 h1 {
