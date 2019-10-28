@@ -24,6 +24,10 @@ table {
 	margin-right: auto;
 }
 
+table tr td:first-child {
+	font-weight: bold;
+}
+
 td, th {
 	border: 1px solid black;
 	text-align: center;
