@@ -1,6 +1,7 @@
 html {
 	background-image: url("https://raw.githubusercontent.com/KiroTheBlueFox/MoBlocksWiki/master/Images/Background.png");
 	background-position: center top;
+	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: repeat-x;
 	font-family: "Arial";
@@ -14,6 +15,7 @@ html {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
+	margin-top: 14px;
 }
 
 table {
@@ -66,6 +68,8 @@ img {
 	color: black;
 	font-style: normal;
 	text-decoration: none;
+	position: relative;
+	top: 14px;
 }
 
 .buttoncurseforge {
@@ -76,6 +80,8 @@ img {
 	color: #b5abda;
 	font-style: normal;
 	text-decoration: none;
+	position: relative;
+	top: 14px;
 }
 
 .button:hover {
@@ -84,10 +90,24 @@ img {
 
 .buttonunused:hover {
 	color: #444;
+	top: 0px;
+	padding-bottom: 15px;
 }
 
 .buttoncurseforge:hover {
 	color: #fff;
+	top: 0px;
+	padding-bottom: 15px;
+}
+
+.button:active, .buttonunused:active {
+	color: #444;
+	background-color: lightgray;
+}
+
+.buttoncurseforge:active {
+	color: #fff;
+	background-color: #784ec4;
 }
 
 .banner {
