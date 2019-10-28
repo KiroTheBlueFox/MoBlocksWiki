@@ -133,8 +133,9 @@ img {
 	-o-transition: 0.25s;
 	-moz-transition: 0.25s;
 	color: #00000088;
-	width: 960px;
-	height: 300px;
+	max-width: 960px;
+	width: auto;
+	max-height: 300px;
 	box-sizing: border-box;
 	font-size: 32px;
 	line-height: 600px;
@@ -143,10 +144,9 @@ img {
 
 .banner:hover {
 	color: #00000000;
-	height: 540px;
+	max-height: 540px;
 	background-image: url("https://github.com/KiroTheBlueFox/MoBlocksWiki/blob/master/Images/MoblocksUpdateBanner.png?raw=true");
 	box-shadow: 0px 0px 15px black;
-	height: 540px;
 	line-height: 972px;
 }
 
