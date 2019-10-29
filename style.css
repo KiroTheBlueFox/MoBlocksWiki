@@ -5,7 +5,7 @@ html {
 	background-attachment: fixed;
 	background-repeat: repeat;
 	font-family: "Arial";
-	font-size: 14px;
+	font-size: 18px;
 	perspective: 1000px;
 }
 
@@ -14,20 +14,30 @@ html {
 	background-color: white;
 	padding: 50px;
 	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
+	padding-bottom: 50px;
+	max-width: 1200px;
+	margin: auto;
 	margin-top: 14px;
 }
 
+@media screen and (max-width: calc(5vw + 1210px)) {
+	.MainPart {
+		margin: calc(5vw + 10px);
+		margin-top: 14px;
+	}
+	
+	.ButtonList {
+		margin-left: 5vw;
+	}
+}
+
 table {
-	margin-left: auto;
-	margin-right: auto;
 	border-collapse: collapse;
+	text-align: center;
 }
 
 td, th {
 	border: 1px solid black;
-	text-align: center;
 	padding: 10px;
 }
 
@@ -55,7 +65,8 @@ img {
 }
 
 .ButtonList {
-	margin-left: 150px;
+	margin: auto;
+	max-width: 1320px;
 	font-weight: bold;
 	font-size: 24px;
 }
@@ -67,6 +78,10 @@ img {
 	color: black;
 	font-style: normal;
 	text-decoration: none;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
+	-moz-transition: 0.1s;
 }
 
 .buttonunused {
@@ -79,6 +94,10 @@ img {
 	text-decoration: none;
 	position: relative;
 	top: 14px;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
+	-moz-transition: 0.1s;
 }
 
 .buttoncurseforge {
@@ -91,6 +110,10 @@ img {
 	text-decoration: none;
 	position: relative;
 	top: 14px;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
+	-moz-transition: 0.1s;
 }
 
 .button:hover {
@@ -120,7 +143,6 @@ img {
 }
 
 .banner {
-	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	border-radius: 30px;
@@ -140,6 +162,7 @@ img {
 	font-size: 32px;
 	line-height: 600px;
 	font-style: italic;
+	text-align: center;
 }
 
 .banner:hover {
@@ -151,17 +174,17 @@ img {
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: heavy;
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 26px;
 	font-weight: normal;
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: normal;
 }
 

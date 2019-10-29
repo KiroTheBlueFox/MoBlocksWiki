@@ -10,7 +10,8 @@ html {
 	background-attachment: fixed;
 	background-repeat: repeat;
 	font-family: "Arial";
-	font-size: 14px;
+	font-size: 18px;
+	perspective: 1000px;
 }
 
 .MainPart {
@@ -18,31 +19,47 @@ html {
 	background-color: white;
 	padding: 50px;
 	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
+	padding-bottom: 50px;
+	max-width: 1200px;
+	margin: auto;
 	margin-top: 14px;
 }
 
-.headbar {
-	margin-left: 30px;
-	margin-right: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 30px;
-	font-weight: bold;
-	border: 3px solid #4488ff;
-	border-radius: 15px;
-	box-shadow: 0px 0px 15px 5px #4488ff inset;
+@media screen and (max-width: calc(5vw + 1210px)) {
+	.MainPart {
+		margin: calc(5vw + 10px);
+		margin-top: 14px;
+	}
+	
+	.ButtonList {
+		margin-left: 5vw;
+	}
 }
 
-.AdditionsList {
-	font-size: 24px;
-	list-style-type: none;
+table {
+	border-collapse: collapse;
+	text-align: center;
 }
 
-.AdditionsButton {
-	text-decoration: none;
+td, th {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+table tr:first-child h2 {
 	font-weight: bold;
+}
+
+table tr td:first-child h3 {
+	font-weight: bold;
+}
+
+tr:nth-child(even) {
+	background-color: lightgray;
+}
+
+.alignLeft {
+	text-align: left;
 }
 
 img {
@@ -53,7 +70,8 @@ img {
 }
 
 .ButtonList {
-	margin-left: 150px;
+	margin: auto;
+	max-width: 1320px;
 	font-weight: bold;
 	font-size: 24px;
 }
@@ -65,6 +83,10 @@ img {
 	color: black;
 	font-style: normal;
 	text-decoration: none;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
+	-moz-transition: 0.1s;
 }
 
 .buttonunused {
@@ -77,6 +99,10 @@ img {
 	text-decoration: none;
 	position: relative;
 	top: 14px;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
+	-moz-transition: 0.1s;
 }
 
 .buttoncurseforge {
@@ -89,6 +115,10 @@ img {
 	text-decoration: none;
 	position: relative;
 	top: 14px;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
+	-moz-transition: 0.1s;
 }
 
 .button:hover {
@@ -118,26 +148,48 @@ img {
 }
 
 .banner {
-	margin-left: 0px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	width: 40%;
 	border-radius: 30px;
+	background-image: url("https://github.com/KiroTheBlueFox/MoBlocksWiki/blob/master/Images/MoBlocksTitle3DOnlyLogoREDSTONE.png?raw=true");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 0.25s;
+	-webkit-transition: 0.25s;
+	-o-transition: 0.25s;
+	-moz-transition: 0.25s;
+	color: #00000088;
+	max-width: 960px;
+	width: auto;
+	max-height: 300px;
+	box-sizing: border-box;
+	font-size: 32px;
+	line-height: 600px;
+	font-style: italic;
+	text-align: center;
+}
+
+.banner:hover {
+	color: #00000000;
+	max-height: 540px;
+	background-image: url("https://github.com/KiroTheBlueFox/MoBlocksWiki/blob/master/Images/MoblocksUpdateBanner.png?raw=true");
 	box-shadow: 0px 0px 15px black;
+	line-height: 972px;
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: heavy;
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 26px;
 	font-weight: normal;
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: normal;
 }
 
@@ -152,7 +204,8 @@ a {
 
 a:hover {
 	color: #0033bb;
-}</style>
+}
+</style>
         <title>Mo'Blocks Wiki</title>
     </head>
 
@@ -167,7 +220,8 @@ a:hover {
 		</div>
 		
 		<div class="MainPart">
-        <h1>Error 404 : Page not found !</h1>
+        <h1>Error 404 : Page not found !<div class="br" />
+		That's unfortunate :(</h1>
 		</div>
 	</body>
 </html>

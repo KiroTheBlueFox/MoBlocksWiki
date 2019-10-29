@@ -8,6 +8,10 @@ html {
 	font-size: 18px;
 }
 
+* {
+	z-index: 0;
+}
+
 .MainPart {
 	color: black;
 	background-color: white;
@@ -30,55 +34,104 @@ html {
 	}
 }
 
-.headbar {
-	margin-left: 30px;
-	margin-right: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 30px;
-	text-align: center;
-	font-weight: bold;
-	border: 3px solid #4488ff;
-	border-radius: 15px;
-	box-shadow: 0px 0px 15px 5px #4488ff inset;
-}
-
-.AdditionsList {
-	font-size: 24px;
-	list-style-type: none;
-	width: 128px;
-	margin: auto;
-	margin-top: 32px;
-	margin-bottom: 32px;
+table {
 	border-collapse: collapse;
-	border-top-style: hidden;
-	border-bottom-style: hidden;
 	text-align: center;
+	width: 150px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #666666;
+	text-align: left;
+	box-shadow: 0px 0px 8px 0px #00000088 inset;
 }
 
-.AdditionsButton {
+td a, th a {
 	text-decoration: none;
-	font-weight: bold;
-	margin-top: 32px;
 }
 
-.ButtonIcon {
-	margin-left: 50px;
-	margin-right: 50px;
-	width: 128px;
-	height: 128px;
+td {
+	box-shadow: 0px 0px 8px 0px #00000088 inset;
+	text-align: center;
 	transition: 0.25s;
 	-webkit-transition: 0.25s;
 	-o-transition: 0.25s;
 	-moz-transition: 0.25s;
 }
 
-.ButtonIcon:hover {
-	transform: scale(1.25);
+td img {
+	transition: 0.25s;
+	-webkit-transition: 0.25s;
+	-o-transition: 0.25s;
+	-moz-transition: 0.25s;
 }
 
-.AdditionsList td {
-	border: 3px dashed #4488ff;
+td:hover img {
+	transform: scale(2);
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+}
+
+td:active {
+	background-color: #ccf;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #444444;
+}
+
+tr:nth-child(even) {
+	background-color: lightgray;
+	box-shadow: 0px 0px 8px 0px #000000 inset;
+	vertical-align: top;
+}
+
+tr:nth-child(odd) {
+	background-color: white;
+	box-shadow: 0px 0px 8px 0px #000000 inset;
+}
+
+.craftPicture {
+	display: inline-block;
+	width: 260px;
+	max-width: 75%;
+	filter: drop-shadow(0px 0px 5px #00000088);
+	transition: 0.25s;
+	margin-left: 0px;
+	-webkit-transition: 0.25s;
+	-o-transition: 0.25s;
+	-moz-transition: 0.25s;
+	margin-right: 32px;
+	margin-bottom: 24px;
+}
+
+.craftPicture:hover {
+	width: 520px;
+}
+
+.showPicture {
+	display: inline-block;
+	width: 260px;
+	max-width: 75%;
+	filter: drop-shadow(0px 0px 5px #00000088);
+	transition: 0.25s;
+	margin-left: 0px;
+	-webkit-transition: 0.25s;
+	-o-transition: 0.25s;
+	-moz-transition: 0.25s;
+	margin-right: 24px;
+	margin-bottom: 24px;
+}
+
+.showPicture:hover {
+	width: 520px;
 }
 
 img {
@@ -87,23 +140,28 @@ img {
 	width: 50%;
 }
 
-.ButtonList {
-	margin: auto;
-	max-width: 1320px;
-	font-weight: bold;
-	font-size: 24px;
-}
-
-table tr td {
+li img {
+	display: inline-block;
+	width: 32px;
 	transition: 0.1s;
 	-webkit-transition: 0.1s;
 	-o-transition: 0.1s;
 	-moz-transition: 0.1s;
 }
 
-table tr td:active {
-	background-color: #eee;
-	color: blue;
+li img:hover {
+	transform: scale(3);
+}
+
+ul {
+	list-style-type: none;
+}
+
+.ButtonList {
+	margin: auto;
+	max-width: 1320px;
+	font-weight: bold;
+	font-size: 24px;
 }
 
 .button {
@@ -194,11 +252,12 @@ h3 {
 
 a {
 	color: #0066ff;
+	text-decoration: none;
 }
 
 .br { 
 	display: block; 
-	margin-bottom: 0em; 
+	margin-bottom: 0.1em;
 }
 
 a:hover {
