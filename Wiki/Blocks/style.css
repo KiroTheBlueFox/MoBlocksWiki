@@ -98,24 +98,6 @@ tr:nth-child(odd) {
 	box-shadow: 0px 0px 8px 0px #000000 inset;
 }
 
-.craftPicture {
-	display: inline-block;
-	width: 260px;
-	max-width: 75%;
-	filter: drop-shadow(0px 0px 5px #00000088);
-	transition: 0.25s;
-	margin-left: 0px;
-	-webkit-transition: 0.25s;
-	-o-transition: 0.25s;
-	-moz-transition: 0.25s;
-	margin-right: 32px;
-	margin-bottom: 24px;
-}
-
-.craftPicture:hover {
-	width: 520px;
-}
-
 .showPicture {
 	display: inline-block;
 	width: 260px;
