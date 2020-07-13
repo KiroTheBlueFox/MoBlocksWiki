@@ -9,14 +9,16 @@ html {
 }
 
 .MainPart {
-	color: black;
-	background-color: white;
+	color: white;
+    background-image: url("../../Images/dark.png");
+    background-repeat: repeat;
 	padding: 50px;
 	padding-top: 20px;
 	padding-bottom: 50px;
 	max-width: 1200px;
 	margin: auto;
 	margin-top: 14px;
+    box-shadow: 0 0 8px #00000088;
 }
 
 @media screen and (max-width: calc(5vw + 1210px)) {
@@ -32,14 +34,14 @@ html {
 
 .Hierarchy {
 	width: 150px;
-	border-style: outset;
-	border-width: 3px;
-	border-radius: 9px;
-	border-color: #bbbbbb;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
 	text-align: center;
 	list-style-type: "";
     padding: 8px;
-	box-shadow: 0px 0px 8px 0px #00000088 inset;
+	background-image: url("../../Images/light.png");
+    background-repeat: repeat;
 }
 
 .Hierarchy a {
@@ -48,12 +50,12 @@ html {
 
 .CCPHover:before {
     content: "CCP";
-    color: black;
+    color: white;
 }
 
 .CCPHover:hover:before {
     content: "Custom Color Picker";
-    color: #048;
+    color: #08f;
 }
 
 .code {
@@ -61,6 +63,7 @@ html {
     color: white;
 	border-radius: 9px;
     padding: 10px;
+    box-shadow: 0 0 8px #000000;
     font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -103,8 +106,9 @@ img {
 .button {
 	padding: 15px;
 	margin: 10px;
-	background-color: white;
-	color: black;
+	background-image: url("../../Images/dark.png");
+    background-repeat: repeat;
+	color: white;
 	font-style: normal;
 	text-decoration: none;
 	transition: 0.1s;
@@ -117,7 +121,8 @@ img {
 	padding: 15px;
 	margin: 10px;
 	padding-bottom: 1px;
-	background-color: gray;
+	background-image: url("../../Images/light.png");
+    background-repeat: repeat;
 	color: black;
 	font-style: normal;
 	text-decoration: none;

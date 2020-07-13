@@ -9,14 +9,16 @@ html {
 }
 
 .MainPart {
-	color: black;
-	background-color: white;
+	color: white;
+    background-image: url("../Images/dark.png");
+    background-repeat: repeat;
 	padding: 50px;
 	padding-top: 20px;
 	padding-bottom: 50px;
 	max-width: 1200px;
 	margin: auto;
 	margin-top: 14px;
+    box-shadow: 0 0 8px #00000088;
 }
 
 @media screen and (max-width: calc(5vw + 1210px)) {
@@ -31,6 +33,9 @@ html {
 }
 
 .headbar {
+    color: black;
+    background-image: url("../Images/light.png");
+    background-repeat: repeat;
 	margin-left: 30px;
 	margin-right: 30px;
 	padding-top: 10px;
@@ -102,15 +107,17 @@ table tr td {
 }
 
 table tr td:active {
-	background-color: #eee;
+	background-image: url("../Images/light.png");
+    background-repeat: repeat;
 	color: blue;
 }
 
 .button {
 	padding: 15px;
 	margin: 10px;
-	background-color: white;
-	color: black;
+	background-image: url("../Images/dark.png");
+    background-repeat: repeat;
+	color: white;
 	font-style: normal;
 	text-decoration: none;
 	transition: 0.1s;
@@ -123,7 +130,8 @@ table tr td:active {
 	padding: 15px;
 	margin: 10px;
 	padding-bottom: 1px;
-	background-color: gray;
+	background-image: url("../Images/light.png");
+    background-repeat: repeat;
 	color: black;
 	font-style: normal;
 	text-decoration: none;

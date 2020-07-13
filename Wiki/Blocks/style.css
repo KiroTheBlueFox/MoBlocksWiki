@@ -13,14 +13,16 @@ html {
 }
 
 .MainPart {
-	color: black;
-	background-color: white;
+	color: white;
+    background-image: url("../../Images/dark.png");
+    background-repeat: repeat;
 	padding: 50px;
 	padding-top: 20px;
 	padding-bottom: 50px;
 	max-width: 1200px;
 	margin: auto;
 	margin-top: 14px;
+    box-shadow: 0 0 8px #00000088;
 }
 
 @media screen and (max-width: calc(5vw + 1210px)) {
@@ -40,11 +42,7 @@ table {
 	width: 150px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	border-style: solid;
-	border-width: 3px;
-	border-color: #666666;
 	text-align: left;
-	box-shadow: 0px 0px 8px 0px #00000088 inset;
 }
 
 td a, th a {
@@ -52,7 +50,6 @@ td a, th a {
 }
 
 td {
-	box-shadow: 0px 0px 8px 0px #00000088 inset;
 	text-align: center;
 	transition: 0.25s;
 	-webkit-transition: 0.25s;
@@ -76,26 +73,23 @@ td:hover img {
 }
 
 td:active {
-	background-color: #ccf;
+	background-image: url("../../Images/light.png");
+    background-repeat: repeat;
 }
 
 td, th {
 	border: 1px solid black;
 	padding: 10px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #444444;
 }
 
-tr:nth-child(even) {
-	background-color: lightgray;
-	box-shadow: 0px 0px 8px 0px #000000 inset;
-	vertical-align: top;
+th {
+	background-image: url("../../Images/light.png");
+    background-repeat: repeat;
 }
 
-tr:nth-child(odd) {
-	background-color: white;
-	box-shadow: 0px 0px 8px 0px #000000 inset;
+tr {
+	background-image: url("../../Images/white.png");
+    background-repeat: repeat;
 }
 
 .showPicture {
@@ -149,8 +143,9 @@ ul {
 .button {
 	padding: 15px;
 	margin: 10px;
-	background-color: white;
-	color: black;
+	background-image: url("../../Images/dark.png");
+    background-repeat: repeat;
+	color: white;
 	font-style: normal;
 	text-decoration: none;
 	transition: 0.1s;
@@ -163,7 +158,8 @@ ul {
 	padding: 15px;
 	margin: 10px;
 	padding-bottom: 1px;
-	background-color: gray;
+	background-image: url("../../Images/light.png");
+    background-repeat: repeat;
 	color: black;
 	font-style: normal;
 	text-decoration: none;
@@ -244,4 +240,8 @@ a {
 
 a:hover {
 	color: #0033bb;
+}
+
+.textBottom {
+    margin-bottom: 10px;
 }
